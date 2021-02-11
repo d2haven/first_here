@@ -1,0 +1,442 @@
+@font-face {
+font-family: 'Century Gothic';
+src: local('Century Gothic'),
+    url(./fonts/11528.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gothic';
+}
+.header {
+    height: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8EAEF;
+}
+.social {
+    width: 142px;
+    margin-left: 145px;
+}
+.social a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+.social a:nth-child(1),
+.footer_social a:nth-child(1) {
+    padding-left: 0px;
+}
+
+.lang {
+    width: 120px;
+    margin-right: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lang a {
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9999A0;
+}
+.lang a:hover,
+.lang a:active {
+    color: #181819;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.nav ul li:nth-child(1){
+    list-style: none;
+}
+/*
+.example li:nth-child(1){
+    padding-left: 0px;
+}
+*/
+.nav ul li a {
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #181819;
+
+}
+.example li {
+    padding-left: 50px;
+}
+.video {
+    background-image: url(./img/banner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+}
+.title_progects {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.title_progects span {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #181819;
+}
+.new::before {
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    background-color: #000;
+    content: '';
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: 22px;
+
+}
+.new::after {
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    background-color: #000;
+    content: '';
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 22px;
+
+}
+.first_block_section,
+.second_block_section,
+.third_block_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+
+.block a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden; 
+    
+}
+  
+.block span {
+    padding-top: 20px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #181819;
+}
+
+.block a img {
+    opacity: 1;
+    transition: opacity 124ms linear, transform 124ms linear;  
+	width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.back{
+    background: #000;
+}
+
+.block:hover a img {
+    opacity: 0.9; 
+    transform: scale(1.05); 
+}
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.title_text h1{
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #181819;
+}
+.text span {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #181819;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#more {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #181819;
+    border-bottom: 1px dashed #181819;
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 60px;
+}
+
+button:focus {
+    border: none;
+    border-bottom: 1px dashed #181819;
+}
+
+footer{
+    height: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8EAEF;
+    background: #24262D;
+}
+
+.footer_social {
+    margin-left: 110px;
+}
+
+.footer_social a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.rights {
+    margin: 0 auto;
+}
+
+.rights span {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #C9CBD0;
+}
+.point {
+    margin-right: 118px;
+}
+
+  /*Style for menu links*/
+.mobile-menu li a {
+      display:block;
+      min-width:140px; 
+      -webkit-transition: all 0.4s ease 0s;
+      -moz-transition: all 0.4s ease 0s;
+      -ms-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+       transition: all 0.4s ease 0s;
+  }
+  
+.mobile-menu li:hover a {
+      color: #7d7f81;
+  }
+  
+.mobile-menu li:hover ul a {
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #000000;
+}
+
+.mobile-menu li ul {
+	display: none;
+}
+
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding: 15px 15px;
+	display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width: 360px){
+    header {
+        flex-direction: column!important;
+    }
+    .lang {
+        width: fit-content;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .lang a {
+        padding-left: 20px;
+    }
+
+    .social {
+        width: fit-content;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .text {
+        width:100%;
+
+    }
+    button {
+        margin-left: 30%;
+    }
+    .video {
+        background-size: 100%;
+        height: 165px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_social {
+        padding-top: 10px;
+        margin-left: 0px;
+    }
+    .rights {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .point {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 800px){
+
+    .mobile-menu .menu_item {
+      border-bottom: 15px double #3f3b3b; 
+      border-top: 5px solid #3f3b3b; 
+      content:"";
+      height: 5px; 
+      width: 5px;
+    padding-right: 5px;
+    margin-right: 20px;
+    float: right;
+     }
+      
+      .mobile-menu ul {
+          position: static;
+          display: none;
+          height: 100vh;
+      }
+      
+      .mobile-menu li {
+          margin-bottom: 1px;
+      }
+      .nav ul li:nth-child(1){
+        list-style: none;
+        margin-left: 0px!important;
+    }
+      
+      .mobile-menu ul li, .mobile-menu li a {
+          width: 100%;
+          text-align: center;
+          padding-bottom: 10px;
+      }
+      
+      .mobile-menu .show-menu {
+          display:block;
+      }
+      .video {
+        background-image: url(./img/banner.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 160px;
+    }
+    .first_block_section, 
+    .second_block_section, 
+    .third_block_section {
+        justify-content: center;
+
+    }
+    .block {
+        padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px){
+    .example li{
+        list-style: none;
+        padding: 0;
+            padding-left: 0;
+            margin-left: 0;
+            list-style-type: none;
+        }
+    }
+    .nav ul li:nth-child(1) {
+        list-style: none;
+        margin-left: 135px;
+    }
+    .video {
+        height: 300px;
+    }
+  
